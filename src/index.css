@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fc;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Cải thiện card */
+.card {
+  border: none;
+  border-radius: 0.35rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.card .card-header {
+  background-color: #f8f9fc;
+  border-bottom: 1px solid #e3e6f0;
+  padding: 1rem 1.35rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Cải thiện button */
+.btn {
+  border-radius: 0.35rem;
+  padding: 0.375rem 0.75rem;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #4e73df;
+  border-color: #4e73df;
+}
+
+.btn-primary:hover {
+  background-color: #2e59d9;
+  border-color: #2653d4;
+}
+
+/* Cải thiện table */
+.table {
+  color: #5a5c69;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #e3e6f0;
+  background-color: #f8f9fc;
+  color: #4e73df;
+  font-weight: 700;
+}
+
+.table-bordered {
+  border: 1px solid #e3e6f0;
+}
+
+.table-bordered td, .table-bordered th {
+  border: 1px solid #e3e6f0;
+}
+
+/* Cải thiện form */
+.form-control {
+  border-radius: 0.35rem;
+  border: 1px solid #d1d3e2;
+  padding: 0.375rem 0.75rem;
+  color: #6e707e;
+}
+
+.form-control:focus {
+  border-color: #bac8f3;
+  box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+/* Cải thiện pagination */
+.pagination .page-item .page-link {
+  color: #4e73df;
+  border: 1px solid #e3e6f0;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #4e73df;
+  border-color: #4e73df;
+  color: #fff;
+}
+
+/* Cải thiện sidebar */
+.sidebar-nav .sidebar-item .sidebar-link {
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.sidebar-nav .sidebar-item .sidebar-link:hover {
+  background-color: rgba(78, 115, 223, 0.1);
+  color: #4e73df;
+}
+
+.sidebar-nav .sidebar-item .sidebar-link.active {
+  background-color: rgba(78, 115, 223, 0.1);
+  color: #4e73df;
+  font-weight: 700;
+}
+
+/* Bỏ gạch chân cho tất cả các liên kết trong ứng dụng */
+a, a:hover, a:focus, a:active, a:visited {
+    text-decoration: none !important;
+}
+
+/* Bỏ gạch chân đặc biệt cho các liên kết trong sidebar */
+.sidebar-nav a, 
+.sidebar-nav .sidebar-item a,
+.sidebar-nav .sidebar-link,
+.left-sidebar a,
+.left-sidebar .sidebar-item a,
+.left-sidebar .sidebar-link {
+    text-decoration: none !important;
+}
+
+/* Làm đậm khi hover hoặc active */
+.sidebar-nav a:hover,
+.sidebar-nav a.active,
+.sidebar-nav .selected > a,
+.sidebar-nav .sidebar-item.selected > a {
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+
+/* Styles cho Dashboard */
+.border-left-primary {
+    border-left: 0.25rem solid #4e73df !important;
+}
+
+.border-left-success {
+    border-left: 0.25rem solid #1cc88a !important;
+}
+
+.border-left-info {
+    border-left: 0.25rem solid #36b9cc !important;
+}
+
+.border-left-warning {
+    border-left: 0.25rem solid #f6c23e !important;
+}
+
+.border-left-danger {
+    border-left: 0.25rem solid #e74a3b !important;
+}
+
+.text-gray-300 {
+    color: #dddfeb !important;
+}
+
+.text-gray-800 {
+    color: #5a5c69 !important;
+}
+
+.shadow {
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #e3e6f0;
+    border-radius: 0.35rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 2rem 0 rgba(58, 59, 69, 0.2) !important;
+}
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+}
+
+.chart-area, .chart-pie {
+    position: relative;
+    height: 20rem;
+    width: 100%;
+}
+
+/* Styles cho badges */
+.badge {
+    display: inline-block;
+    padding: 0.4em 0.8em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1
+}
